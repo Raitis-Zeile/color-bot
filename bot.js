@@ -1,7 +1,8 @@
+require('dotenv').config();
 const { Client, GatewayIntentBits, SlashCommandBuilder, REST, Routes } = require('discord.js');
 
 // ─── CONFIG ───────────────────────────────────────────────────────────────────
-const TOKEN = process.env.DISCORD_TOKEN;
+const TOKEN = process.env.DISCORD_TOKEN;       // Your bot token
 const CLIENT_ID = '1512449170202562661';
 const GUILD_ID = '1512425758902194388';
 
