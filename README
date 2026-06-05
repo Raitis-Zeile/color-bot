@@ -1,0 +1,36 @@
+Discord color bot
+A simple discord bot that lets each member change their own role color using hex codes.
+
+Usage
+in channel where you have this bot type:  /color andhex sode for color you want (for example #880808 is my favorite)
+the bot will intantly update your roles color. btw only you can ee thi bots reply.
+
+Setup
+Instal Node.js  
+    download and install from nodejs.org LTS version
+Clone the repo and install dependencies
+    git clone https://github.com/yourusername color-bot.git
+    cd color-bot
+    npm install
+Create your .env file
+    copy env.example to a new file called .env and fill in your bot token:
+    DISCORD_TOKEN=your_token_here
+    btw DONT share your .env file
+Create bot on discord
+    Go to  discord.com/developers/applications - new application
+    Go to bot tab - add bot - copy the tokens into your .env
+    go to OAuth2 - URL generator:
+        scopes: bot, applications.commands
+        bot permissions:manage roles
+    Open the generated URL and invite bot to your server
+Set role hierarchy
+    in your server: setings - roles - drag bots role above the member roles, discords only lets bots edit roles that are below them.
+Run the bot
+    node bot.js
+you shoud seesometing like:
+    Logged in as YourBot#1234
+    Slash command registered
+
+Notes
+the bot must berunning to work, if youclose the terminal it goes offline.
+there may be around 1 minute couldown before it will startworking on discord
